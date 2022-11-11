@@ -1,0 +1,17 @@
+.headerBox {
+	position: absolute;
+	height: 400px;
+	width: 100%;
+    top: 0px; left: 0px; right: 0px;
+	background-color: rgb(238, 238, 238);
+}
+.header {
+	position: absolute;
+	text-align: center;
+	top: 290px; left: 30%;
+}
+.header2 {
+	position: absolute;
+	text-align: center;
+	left: 0;
+}
