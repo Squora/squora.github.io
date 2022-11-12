@@ -5,17 +5,101 @@
     top: 0px; left: 0px; right: 0px;
 	background-color: rgb(238, 238, 238);
 }
+
+.logo {
+	position: absolute;
+	top: 50px; left: 100px;
+}
+
 .header {
 	position: absolute;
 	text-align: center;
-	top: 290px; left: 30%;
+	top: 250px; left: 30%;
+	font-size: 40px;
+	font-weight: bold;
 }
 .header2 {
 	position: absolute;
 	text-align: center;
 	left: 0;
+	font-size: 40px;
+	font-weight: bold;
 }
 
+.sectionTitle{
+	position: absolute;
+	top: 150px; left: 100px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.bar-menu__link1 {
+	position: absolute;
+	top: 200px; left: 580px;
+	font-family: sans-serif;
+	font-size: 17px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+}
+
+.bar-menu__link2 {
+	position: absolute;
+	top: 200px; left: 700px;
+	font-family: sans-serif;
+	font-size: 17px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+}
+
+.bar-menu__link3 {
+	position: absolute;
+	top: 198px; left: 900px;
+	font-family: sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: lightgray;
+}
+
+.upper-menu__link1 {
+	position: absolute;
+	padding-left: 1200px;
+	top: 50px;
+	font-family: sans-serif;
+	font-size: 17px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+}
+
+.upper-menu__link2 {
+	position: absolute;
+	padding-left: 1400px;
+	top: 50px;
+	font-family: sans-serif;
+	font-size: 17px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+}
+.upper-menu__link3 {
+	position: absolute;
+	padding-left: 1600px;
+	top: 50px;
+	font-family: sans-serif;
+	font-size: 17px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+}
+   
 .sidenav {
 	width: 64px;
 	height: 100%;
