@@ -84,7 +84,7 @@
    
    .burger-menu__nav {
 	min-width: 100%;
-        min-height: 100%;
+    min-height: 100%;
 	padding-top: 80px;
 	position: fixed;
 	z-index: 20;
@@ -106,7 +106,6 @@
    .burger-menu__link {
 	padding: 16px;
 	padding-left: 200px;
-	padding-right: 835px;
 	font-family: sans-serif;
 	font-size: 17px;
 	text-decoration: none;
