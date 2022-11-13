@@ -22,7 +22,7 @@
 }
 .header2 {
 	position: absolute;
-	text-align: center;
+	#text-align: center;
 	left: 0;
 	font-size: 40px;
 	font-weight: bold;
@@ -37,30 +37,33 @@
 
 .crumbsContainer {
 	position: absolute;
-	top: 45%; left: 29%
+	top: 54%; left: 27.5%
 }
 
 .crumbs {
-  	padding: 1em;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    list-style-type: none;
+}
+  
+.crumbs li {
+	position: relative;
 }
 
-.crumbs li {
-	display: inline-flex;
-	align-items: center;
+.crumbs li:not(:last-child) {
+	padding-right: 40px;
+	padding-left: 7px;
 }
 
 .crumbs li:after {
-	#position: absolute;
-	content: ' ';
-	border-top: solid 2px;
-	padding: 0 0.25em 0 0.5em;
-	color: #999;
-	margin: 0 10px;
-}
-
-.crumbs li.last:before, .crumbs li.last:after {
-	#position: absolute;
-	content: '';
+	position: absolute;
+    content: '';
+    width: 12px;
+    height: 2px;
+    background: #999;
+    right: 9px;
+    top: calc(50% - 1px);
 }
 
 .crumb {
