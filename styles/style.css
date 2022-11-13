@@ -1,6 +1,6 @@
 .headerBox {
 	position: absolute;
-	height: 400px;
+	height: 40%;
 	width: 100%;
     top: 0px; left: 0px; right: 0px;
 	background-color: rgb(238, 238, 238);
@@ -8,13 +8,13 @@
 
 .logo {
 	position: absolute;
-	top: 50px; left: 100px;
+	top: 10%; left: 6%;
 }
 
 .header {
 	position: absolute;
 	text-align: center;
-	top: 250px; left: 30%;
+	top: 60%; left: 30%;
 	font-size: 40px;
 	font-weight: bold;
 }
@@ -28,14 +28,14 @@
 
 .sectionTitle{
 	position: absolute;
-	top: 150px; left: 100px;
+	top: 40%; left: 6%;
 	font-size: 30px;
 	font-weight: bold;
 }
 
 .bar-menu__link1 {
 	position: absolute;
-	top: 200px; left: 580px;
+	top: 50%; left: 30%;
 	font-family: sans-serif;
 	font-size: 17px;
 	text-decoration: none;
@@ -46,7 +46,7 @@
 
 .bar-menu__link2 {
 	position: absolute;
-	top: 200px; left: 700px;
+	top: 50%; left: 36%;
 	font-family: sans-serif;
 	font-size: 17px;
 	text-decoration: none;
@@ -57,7 +57,7 @@
 
 .bar-menu__link3 {
 	position: absolute;
-	top: 198px; left: 900px;
+	top: 49%; left: 46%;
 	font-family: sans-serif;
 	font-size: 20px;
 	text-decoration: none;
@@ -67,8 +67,8 @@
 
 .upper-menu__link1 {
 	position: absolute;
-	padding-left: 1200px;
-	top: 50px;
+	#padding-left: 1200px;
+	top: 10%; left: 65%;
 	font-family: sans-serif;
 	font-size: 17px;
 	text-decoration: none;
@@ -79,8 +79,8 @@
 
 .upper-menu__link2 {
 	position: absolute;
-	padding-left: 1400px;
-	top: 50px;
+	#padding-left: 1400px;
+	top: 10%; left: 75%;
 	font-family: sans-serif;
 	font-size: 17px;
 	text-decoration: none;
@@ -90,8 +90,8 @@
 }
 .upper-menu__link3 {
 	position: absolute;
-	padding-left: 1600px;
-	top: 50px;
+	#padding-left: 1600px;
+	top: 10%; left: 85%;
 	font-family: sans-serif;
 	font-size: 17px;
 	text-decoration: none;
