@@ -8,7 +8,9 @@
 
 .logo {
 	position: absolute;
-	top: 10%; left: 6%;
+	top: 10%; left: 5%;
+	height: 12%;
+	width: 12%;
 }
 
 .header {
@@ -26,16 +28,37 @@
 	font-weight: bold;
 }
 
-.sectionTitle{
+.sectionTitle {
 	position: absolute;
 	top: 40%; left: 6%;
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.bar-menu__link1 {
+.crumbsContainer {
 	position: absolute;
-	top: 50%; left: 30%;
+	top: 45%; left: 29%
+}
+
+.crumbs {
+  		padding: 1em;
+		}
+		.crumbs li {
+			display: inline-flex;
+			align-items: center;
+		}
+		.crumbs li:after {
+			content: ' ';
+			border-top: solid 2px;
+			padding: 0 0.25em 0 0.5em;
+			color: #999;
+			margin: 0 10px;
+		}
+		.crumbs li.last:before, .crumbs li.last:after {
+			content: '';
+		}
+
+.crumb {
 	font-family: sans-serif;
 	font-size: 17px;
 	text-decoration: none;
@@ -44,22 +67,9 @@
 	color: black;
 }
 
-.bar-menu__link2 {
-	position: absolute;
-	top: 50%; left: 36%;
+.activeCrumb { 
 	font-family: sans-serif;
-	font-size: 17px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: black;
-}
-
-.bar-menu__link3 {
-	position: absolute;
-	top: 49%; left: 46%;
-	font-family: sans-serif;
-	font-size: 20px;
+	font-size: 19px;
 	text-decoration: none;
 	font-weight: bold;
 	color: lightgray;

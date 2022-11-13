@@ -1,4 +1,3 @@
-
 function burgerMenu(selector) {
     let menu = $(selector);
     let button = menu.find('.burger-menu__button');
