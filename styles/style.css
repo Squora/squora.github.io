@@ -120,10 +120,7 @@
 	background-color: #1E1E1E;
 	transition: 0.4s;
    }
-   
-   .burger-menu__button:hover .burger-menu__lines {
-	filter: brightness(0.7);
-   }
+ 
    
    .burger-menu__lines,
    .burger-menu__lines::after,
@@ -143,12 +140,12 @@
    
    .burger-menu__lines::before {
 	content: "";
-	top: -7px;
+	top: -8px;
    }
    
    .burger-menu__lines::after {
 	content: "";
-	top: 7px;
+	top: 8px;
    }
    .burger-menu_active .burger-menu__button,
    .burger-menu_active .burger-menu__lines {
@@ -168,7 +165,7 @@
    
    .burger-menu__nav {
 	min-width: 100%;
-    min-height: 100%;
+	min-height: 100%;
 	padding-top: 80px;
 	position: fixed;
 	z-index: 20;
@@ -182,37 +179,86 @@
 	transition: 0.5s;
    }
    
-   .burger-menu_active .burger-menu__nav {
-	left: 0;
-	top: 0;
-   }
-   
-   .burger-menu__link {
+   .burger-menu__nav a{
 	padding: 16px;
-	padding-left: 200px;
 	font-family: sans-serif;
-	font-size: 17px;
+	font-size: 16px;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: bold;
 	color: #fff;
+	transition: margin .2s ease-in-out;
    }
-   
-   .burger-menu__link :hover {
-	filter: brightness(0.7);
-   }
-   
-   .burger-menu__overlay {
-	display: none;
-	position: fixed;
-	top: 0;
+
+   .burger-menu_active .burger-menu__nav {
 	left: 0;
-	width: 100vw;
-	height: 100vh;
-	z-index: 10;
    }
-   .burger-menu_active .burger-menu__overlay {
-	display: block;
-   
+   .burger-menu__link1 {
+	position: absolute;
+	left: 173px;
+	top: 60px;
+   }
+
+
+.burger-menu__nav a:hover,
+.burger-menu__nav a:focus{
+	filter: brightness(0.7);
+	margin-left: 0.5em;
+	outline: none;
+}
+
+
+
+   .burger-menu__link2{
+	position: absolute;
+	left: 173px;
+	top: 110px;
+   }
+
+   .burger-menu__link3 {
+	position: absolute;
+	left: 173px;
+	top: 158px;
+   }
+
+   .burger-menu__link4 {
+	position: absolute;
+	left: 173px;
+	top: 206px;
+   }
+
+   .burger-menu__link5 {
+	position: absolute;
+	left: 173px;
+	top: 254px;
+   }
+
+   .burger-menu__link6 {
+	position: absolute;
+	left: 173px;
+	top: 302px;
+   }
+
+   .burger-menu__link7 {
+	position: absolute;
+	left: 173px;
+	top: 350px;
+   }
+   .burger-menu__link8 {
+	position: absolute;
+	left: 173px;
+	top: 398px;
+   }
+
+   .burger-menu__link9 {
+	position: absolute;
+	left: 173px;
+	top: 446px;
+   }
+
+   .burger-menu__link10 {
+	position: absolute;
+	left: 173px;
+	top: 494px;
    }
