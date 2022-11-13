@@ -119,6 +119,7 @@
 }
    
 .sidenav {
+	position: relative;
 	width: 4.15%;
 	height: 100%;
 	background: #1E1E1E;
@@ -127,6 +128,37 @@
 	left: 0;
 }
 
+.long1{
+	position: absolute;
+	top: 28.5%; left: 28%;
+}
+.long2{
+	position: absolute;
+	top: 40.7%; left: 28%;
+}
+
+.long3{
+	position: absolute;
+	top: 53%; left: 28%;
+}
+.long4{
+	position: absolute;
+	top: 77%; left: 28%;
+}
+
+.long5{
+	position: absolute;
+	top: 83%; left: 35%;
+	color: #fff;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 13px;
+}
+
+.long6{
+	position: absolute;
+	top: 93%; left: 23%;
+}
 .burger-menu__button {
 	position: fixed;
 	top: 28px;
