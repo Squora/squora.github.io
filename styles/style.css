@@ -1,3 +1,10 @@
+@font-face {
+	font-family: Gilroy;
+	src: url(../fonts/gilroy.ttf);
+}
+.headerBox{
+	font-family: Gilroy;
+}
 .headerBox {
 	position: absolute;
 	height: 40%;
