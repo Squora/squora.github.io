@@ -260,12 +260,17 @@
 
 .burger-menu__nav a:hover,
 .burger-menu__nav a:focus{
-	filter: brightness(0.7);
 	margin-left: 0.5em;
 	outline: none;
 }
 
-
+.burger-menu__link1:hover ~ a, .burger-menu__link2:hover ~ a,
+.burger-menu__link3:hover ~ a, .burger-menu__link4:hover ~ a,
+.burger-menu__link5:hover ~ a, .burger-menu__link6:hover ~ a,
+.burger-menu__link7:hover ~ a, .burger-menu__link8:hover ~ a,
+.burger-menu__link9:hover ~ a, .burger-menu__link10:hover ~ a{
+	filter: brightness(0.7);
+}
 
    .burger-menu__link2{
 	position: absolute;
