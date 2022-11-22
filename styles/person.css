@@ -1,8 +1,8 @@
 .triangle {
 	display: inline-block;
   position: relative;
-  width: 3em; /* ширина элемента */ 
-  height: 3em; /* высота элемента */ 
+  width: 7em; /* ширина элемента */ 
+  height: 7em; /* высота элемента */ 
   background: currentColor; /* цвет иконки как цвет текста */ 
   border-radius: 70% 0 / 70%;
   transform: rotate(45deg);
@@ -16,20 +16,20 @@
 	height: 100px;
 	background: #fff;
     position: absolute;
-    top: 480px;
-    right: 190px;
+    top: 512px;
+    right: 170px;
 }
 
 /* styles below for demonstration purposes only */
 .square_under {
     background-color: #000;
-  width: 65px;
-  height: 5px;
+  width: 9.89em;
+  height: 10px;
   border-radius: 50% / 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
     position:absolute;
-    top: 478px;
-    right: 192px;
+    top: 511px;
+    right: 176px;
     transform: rotate(180deg)
 }
