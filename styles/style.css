@@ -2,6 +2,7 @@
 	font-family: Gilroy;
 	src: url(../fonts/gilroy.ttf);
 }
+/* --------------------------------------------ШАПКА С БЛОКОМ----------------------------------------------------- */
 .headerBox{
 	font-family: Gilroy;
 }
@@ -166,6 +167,8 @@
 	position: absolute;
 	top: 93%; left: 23%;
 }
+
+/* -------------------------------------МЕНЮ ЧЕРНОЕ СЛЕВА----------------------------------------------------*/
 .burger-menu__button {
 	position: fixed;
 	top: 28px;
@@ -324,30 +327,101 @@
 	left: 173px;
 	top: 494px;
    }
-
-.NavRef {
-	position: absolute;
-	#text-align: center;
+/* --------------------------------------ЗАГОЛОВОК ГЛАНВОЙ СТРАНИЦЫ --------------------------------------*/
+.NaviHeaderBox{
+	font-family: Gilroy;
+}
+   .NavRef {
+	font-family: Gilroy;
+	position: relative;
+	text-align: center;
 	top: 55%; left: 45%;
 	font-size: 30px;
 	font-weight: bold;
 	text-decoration: none;
 	color: black;
 }
+/*-------------------МЕНЮ КВАДРАТИКИ------------------------*/
 
 .BoxesGroup {
 	
 }
 
-.BS_Square {
-	position: absolute;
-	left: 28%; 
-	top: 30%;
-	background: #874ca0;
+
+.BS_Square-container {
+    display: block;
+    position: absolute;
     width: 150px;
     height: 150px;
+	left: 28%;
+	top:30%;
+    border: 0;
+    background-color: #874CA0;
+    color: #874CA0;
 }
 
+.BS_Square_ {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 30%;
+    left:39%;
+}
+
+.text{
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 180%;
+    left:45%;
+}
+.text1{
+    font-family: Gilroy;
+    font-size: 80%;
+	opacity: 0.9;
+    position: absolute;
+    left:-30%;
+    top:80%;
+}
+.text2{
+    font-family: Gilroy;
+    font-size: 80%;
+	opacity: 0.9;
+    position: absolute;
+    left:-17%;
+    top:114%;
+}
+.text-hover {     
+    visibility: hidden; 
+	      
+}
+.text-hover1 {     
+    visibility: hidden; 
+	      
+}
+.BS_Square-container:hover .text{
+    display: none;
+}
+.BS_Square-container:hover .text1{
+    display: none;
+}
+.BS_Square-container:hover .text2{
+    display: none;
+}
+.BS_Square-container:hover .text-hover {    
+    visibility: visible;
+	font-family: Gilroy;
+    font-size: 100%;
+    position: relative;
+	left: -30%;
+}
+.BS_Square-container:hover .text-hover1 {    
+    visibility: visible;
+	font-family: Gilroy;
+    font-size: 100%;
+    position: relative;
+	left: -15%;
+}
+
+/*
 .PK_Square {
 	position: absolute;
 	left: 36.5%;
@@ -383,3 +457,4 @@
     width: 150px;
     height: 150px;
 }
+*/
