@@ -367,13 +367,13 @@
     left:39%;
 }
 
-.text{
+.text_BS_Square{
     font-family: Gilroy;
     font-weight: bold;
     font-size: 180%;
     left:45%;
 }
-.text1{
+.text1_BS_Square{
     font-family: Gilroy;
     font-size: 80%;
 	opacity: 0.9;
@@ -381,7 +381,7 @@
     left:-30%;
     top:80%;
 }
-.text2{
+.text2_BS_Square{
     font-family: Gilroy;
     font-size: 80%;
 	opacity: 0.9;
@@ -389,31 +389,31 @@
     left:-17%;
     top:114%;
 }
-.text-hover {     
+.text-hover_BS_Square {     
     visibility: hidden; 
 	      
 }
-.text-hover1 {     
+.text-hover1_BS_Square {     
     visibility: hidden; 
 	      
 }
-.BS_Square-container:hover .text{
+.BS_Square-container:hover .text_BS_Square{
     display: none;
 }
-.BS_Square-container:hover .text1{
+.BS_Square-container:hover .text1_BS_Square{
     display: none;
 }
-.BS_Square-container:hover .text2{
+.BS_Square-container:hover .text2_BS_Square{
     display: none;
 }
-.BS_Square-container:hover .text-hover {    
+.BS_Square-container:hover .text-hover_BS_Square {    
     visibility: visible;
 	font-family: Gilroy;
     font-size: 100%;
     position: relative;
 	left: -30%;
 }
-.BS_Square-container:hover .text-hover1 {    
+.BS_Square-container:hover .text-hover1_BS_Square {    
     visibility: visible;
 	font-family: Gilroy;
     font-size: 100%;
@@ -421,40 +421,292 @@
 	left: -15%;
 }
 
-/*
-.PK_Square {
-	position: absolute;
+.PK_Square-container {
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
 	left: 36.5%;
 	top: 30%;
-	background: #4c6eb8;
-    width: 150px;
-    height: 150px;
+    border: 0;
+    background-color: #4c6eb8;
+    color: #4c6eb8;
 }
 
-.PR_Square {
-	position: absolute;
+.PK_Square_ {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 30%;
+    left:39%;
+}
+
+.text_PK_Square{
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 180%;
+    left:45%;
+}
+.text1_PK_Square{
+    font-family: Gilroy;
+    font-size: 80%;
+	opacity: 0.9;
+    position: absolute;
+    left:-25%;
+    top:80%;
+}
+.text2_PK_Square{
+    font-family: Gilroy;
+    font-size: 80%;
+	opacity: 0.9;
+    position: absolute;
+    left:-14%;
+    top:114%;
+}
+.text-hover_PK_Square {     
+    visibility: hidden; 
+	      
+}
+.text-hover1_PK_Square {     
+    visibility: hidden; 
+	      
+}
+.PK_Square-container:hover .text_PK_Square{
+    display: none;
+}
+.PK_Square-container:hover .text1_PK_Square{
+    display: none;
+}
+.PK_Square-container:hover .text2_PK_Square{
+    display: none;
+}
+.PK_Square-container:hover .text-hover_PK_Square {    
+    visibility: visible;
+	font-family: Gilroy;
+    font-size: 100%;
+    position: relative;
+	left: -30%;
+}
+.PK_Square-container:hover .text-hover1_PK_Square {    
+    visibility: visible;
+	font-family: Gilroy;
+    font-size: 100%;
+    position: relative;
+	left: -15%;
+}
+
+.PR_Square-container {
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
 	left: 45%; 
 	top: 30%;
-	background: #000000;
-    width: 150px;
-    height: 150px;
+    border: 0;
+    background-color: #000000;
+    color: #000000;
 }
 
-.AB_Square {
-	position: absolute;
+.PR_Square_ {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 30%;
+    left:39%;
+}
+
+.text_PR_Square{
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 180%;
+    left:45%;
+}
+.text1_PR_Square{
+    font-family: Gilroy;
+    font-size: 80%;
+	opacity: 0.9;
+    position: absolute;
+    left:-10%;
+    top:80%;
+}
+.text2_PR_Square{
+    font-family: Gilroy;
+    font-size: 80%;
+	opacity: 0.9;
+    position: absolute;
+    left:-20%;
+    top:114%;
+}
+.text-hover_PR_Square {     
+    visibility: hidden; 
+	      
+}
+.text-hover1_PR_Square {     
+    visibility: hidden; 
+	      
+}
+.PR_Square-container:hover .text_PR_Square{
+    display: none;
+}
+.PR_Square-container:hover .text1_PR_Square{
+    display: none;
+}
+.PR_Square-container:hover .text2_PR_Square{
+    display: none;
+}
+.PR_Square-container:hover .text-hover_PR_Square {    
+    visibility: visible;
+	font-family: Gilroy;
+    font-size: 100%;
+    position: relative;
+	left: -30%;
+}
+.PR_Square-container:hover .text-hover1_PR_Square {    
+    visibility: visible;
+	font-family: Gilroy;
+    font-size: 100%;
+    position: relative;
+	left: -15%;
+}
+
+.AB_Square-container {
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
 	left: 53.5%; 
 	top: 30%;
-	background: #55b432;
-    width: 150px;
-    height: 150px;
+    border: 0;
+    background-color: #55b432;
+    color: #55b432;
 }
 
-.M_Square {
-	position: absolute;
-	left: 62%; 
-	top: 30%;
-	background: #e38901;
+.AB_Square_ {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 30%;
+    left:39%;
+}
+
+.text_AB_Square{
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 180%;
+    left:45%;
+}
+.text1_AB_Square{
+    font-family: Gilroy;
+    font-size: 80%;
+	opacity: 0.9;
+    position: absolute;
+    left:-10%;
+    top:80%;
+}
+.text2_AB_Square{
+    font-family: Gilroy;
+    font-size: 80%;
+	opacity: 0.9;
+    position: absolute;
+    left:-20%;
+    top:114%;
+}
+.text-hover_AB_Square {     
+    visibility: hidden; 
+	      
+}
+.text-hover1_AB_Square {     
+    visibility: hidden; 
+	      
+}
+.AB_Square-container:hover .text_AB_Square{
+    display: none;
+}
+.AB_Square-container:hover .text1_AB_Square{
+    display: none;
+}
+.AB_Square-container:hover .text2_AB_Square{
+    display: none;
+}
+.AB_Square-container:hover .text-hover_AB_Square {    
+    visibility: visible;
+	font-family: Gilroy;
+    font-size: 100%;
+    position: relative;
+	left: -30%;
+}
+.AB_Square-container:hover .text-hover1_AB_Square {    
+    visibility: visible;
+	font-family: Gilroy;
+    font-size: 100%;
+    position: relative;
+	left: -15%;
+}
+.M_Square-container {
+    display: block;
+    position: absolute;
     width: 150px;
     height: 150px;
+	left: 62%; 
+	top: 30%;
+    border: 0;
+    background-color: #e38901;
+    color: #e38901;
 }
-*/
+
+.M_Square_ {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 30%;
+    left:39%;
+}
+
+.text_M_Square{
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 180%;
+}
+.text1_M_Square{
+    font-family: Gilroy;
+    font-size: 80%;
+	opacity: 0.9;
+    position: absolute;
+    left:-12%;
+    top:80%;
+}
+.text2_M_Square{
+    font-family: Gilroy;
+    font-size: 80%;
+	opacity: 0.9;
+    position: absolute;
+    left:-20%;
+    top:114%;
+}
+.text-hover_M_Square {     
+    visibility: hidden; 
+	      
+}
+.text-hover1_M_Square {     
+    visibility: hidden; 
+	      
+}
+.M_Square-container:hover .text_M_Square{
+    display: none;
+}
+.M_Square-container:hover .text1_M_Square{
+    display: none;
+}
+.M_Square-container:hover .text2_M_Square{
+    display: none;
+}
+.M_Square-container:hover .text-hover_M_Square {    
+    visibility: visible;
+	font-family: Gilroy;
+    font-size: 100%;
+    position: relative;
+	left: -30%;
+}
+.M_Square-container:hover .text-hover1_M_Square {    
+    visibility: visible;
+	font-family: Gilroy;
+    font-size: 100%;
+    position: relative;
+	left: -15%;
+}
