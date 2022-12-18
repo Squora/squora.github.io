@@ -1,0 +1,68 @@
+.triangle {
+	display: inline-block;
+  position: relative;
+  width: 7em; /* ширина элемента */ 
+  height: 7em; /* высота элемента */ 
+  background: currentColor; /* цвет иконки как цвет текста */ 
+  border-radius: 70% 0 / 70%;
+  transform: rotate(45deg);
+  position: absolute;
+    top: 455px;
+    right: 200px;
+
+}
+.rectangle {
+	width: 200px;
+	height: 100px;
+	background: #fff;
+    position: absolute;
+    top: 512px;
+    right: 170px;
+}
+
+/* styles below for demonstration purposes only */
+.square_under {
+    background-color: #000;
+  width: 9.89em;
+  height: 10px;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+    position:absolute;
+    top: 511px;
+    right: 177px;
+    transform: rotate(180deg)
+}
+.radius {
+  width: 6em;
+  height: 2.5em;  /* высота в два раза меньше ширины, иначе получится полуовал */
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;  /* угол состоит из половины ширины (50% от 10em = 10em : 2 = 5em) и всей высоты (100% от 5em = 5em) */
+  background: #fff;
+  position: absolute;
+  top: 467px;
+    right: 209px;
+}
+.radius_under {
+  background-color: #fff;
+width: 6em;
+height: 9px;
+border-radius: 50% / 100%;
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+  position:absolute;
+  top: 506.5px;
+  right: 209px;
+  transform: rotate(180deg)
+}
+
+.circle {
+	width: 60px;
+	height: 60px;
+	background: #000;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  position:absolute;
+  top: 460.5px;
+  right: 230px;
+}
