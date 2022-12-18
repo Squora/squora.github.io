@@ -710,3 +710,87 @@
     position: relative;
 	left: -15%;
 }
+
+#bsElements01 {
+  display: none;
+}
+#bsShowButton01:hover {
+  cursor: pointer;
+}
+
+.bs_map {
+	position: absolute;
+	width: 1000px; /*1000*/
+    height: 1000px; /*1000*/
+	left: 22%; /*22*/
+	top: 50%; /*50*/
+}
+
+.map_switcher {
+	position: absolute;
+	width: 50px;
+    height: 50px;
+	left: 72%;
+	top: 140%;
+}
+
+#bsElements02 {
+  display: none;
+}
+#bsShowButton02:hover {
+  cursor: pointer;
+}
+
+.map_switcher2 {
+	position: absolute;
+	width: 50px;
+    height: 50px;
+	left: 26%;
+	top: 94%;
+}
+
+.map_switcher3 {
+	position: absolute;
+	width: 50px;
+    height: 50px;
+	left: 69%;
+	top: 116%;
+}
+
+#bsElements03 {
+  display: none;
+}
+#bsShowButton03:hover {
+  cursor: pointer;
+}
+
+.map_switcher4 {
+	position: absolute;
+	width: 50px;
+    height: 50px;
+	left: 25%;
+	top: 92%;
+}
+
+.map_switcher5 {
+	position: absolute;
+	width: 50px;
+    height: 50px;
+	left: 68%;
+	top: 123%;
+}
+
+#bsElements04 {
+  display: none;
+}
+#bsShowButton04:hover {
+  cursor: pointer;
+}
+
+.map_switcher6 {
+	position: absolute;
+	width: 50px;
+    height: 50px;
+	left: 20%;
+	top: 117%;
+}
