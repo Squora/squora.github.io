@@ -328,6 +328,21 @@
 	top: 494px;
    }
 /* --------------------------------------ЗАГОЛОВОК ГЛАНВОЙ СТРАНИЦЫ --------------------------------------*/
+
+
+.NavLogo {
+	position: absolute;
+	top: 2%; left: 2%;
+	height: 8%;
+	width: 8%;
+}
+
+.NaviHeader {
+	position: absolute;
+	top: 15%; left: 28%;
+	font-size: 30px;
+	font-weight: bold;
+}
 .NaviHeaderBox{
 	font-family: Gilroy;
 }
@@ -710,7 +725,7 @@
     position: relative;
 	left: -15%;
 }
-
+/* --------------------------------------КАРТА --------------------------------------*/
 #bsElements01 {
   display: none;
 }
@@ -733,6 +748,60 @@
 	left: 72%;
 	top: 140%;
 }
+.map_cc {
+	position: absolute;
+	width: 50px;
+    height: 50px;
+	left: 32%;
+	top: 125%;
+}
+
+  #bsShowButtonСС:hover {
+    cursor: pointer;
+  }
+  #Magnifier_CC:hover {
+    cursor: pointer;
+  }
+  #Magnifier2_CC:hover {
+    cursor: pointer;
+  }
+.cc{
+    font-family: Gilroy;
+    font-weight: bold;
+    text-align: 10pt;
+    position: absolute;
+	left: 31.5%;
+	top: 130%;
+}
+.bs_Magnifier_СС{
+    position: absolute;
+	width: 500px; /*500*/
+    height: 367px; /*367*/
+	left: 22%; /*22*/
+	top: 50%; /*50*/
+}
+
+.PermalinkOverlay {
+    background: rgba(0,0,0,0.7);
+    bottom: 0;
+    width: 100%; /*1000*/
+    height: 1100px;
+    left: 0;
+    position:absolute;
+    right: 0;
+    top: 53%;
+    z-index: 1010;
+}
+.bs_Magnifier2_СС{
+    position: absolute;
+	width: 700px; /*1000*/
+    height: 540px; /*1000*/
+	left: 22%; /*22*/
+	top: 45%; /*50*/
+}
+
+
+
 
 #bsElements02 {
   display: none;
@@ -757,40 +826,169 @@
 	top: 116%;
 }
 
-#bsElements03 {
-  display: none;
-}
-#bsShowButton03:hover {
-  cursor: pointer;
-}
 
-.map_switcher4 {
-	position: absolute;
+
+
+
+  
+  .map_switcher4 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 25%;
+      top: 92%;
+  }
+  #bsElements03 {
+    display: none;
+  }
+  #bsShowButton03:hover {
+    cursor: pointer;
+  }
+  .map_switcher5 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 68%;
+      top: 123%;
+  }
+
+  .map_PH{
+    position: absolute;
 	width: 50px;
     height: 50px;
-	left: 25%;
-	top: 92%;
+	left: 77.5%;
+	top: 67%;
 }
 
-.map_switcher5 {
-	position: absolute;
+.pp{
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 3 pt;
+    position: absolute;
+	left: 75%;
+	top: 72%;
+}
+
+.hh{
+    font-family: Gilroy;
+    font-weight: bold;
+    text-align: 10pt;
+    position: absolute;
+	left: 77%;
+	top: 75%;
+}
+.bs_Magnifier_PH{
+    position: absolute;
+	width: 500px; /*500*/
+    height: 367px; /*367*/
+	left: 50%;
+}
+#bsShowButtonPH:hover {
+    cursor: pointer;
+  }
+.bs_Magnifier2_PH{
+    position: absolute;
+	width: 700px; /*1000*/
+    height: 540px; /*1000*/
+	left: 22%; /*22*/
+	top: 15%; /*50*/
+}
+#Magnifier2_PH:hover {
+    cursor: pointer;
+  }
+  
+  #Magnifier_PH:hover {
+    cursor: pointer;
+  }
+
+
+  #bsElements04 {
+    display: none;
+  }
+  #bsShowButton04:hover {
+    cursor: pointer;
+  }
+
+.map_MC{
+    position: absolute;
 	width: 50px;
     height: 50px;
-	left: 68%;
-	top: 123%;
+	left: 58%;
+	top: 145%;
 }
-
-#bsElements04 {
-  display: none;
+.mc{
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 3 pt;
+    position: absolute;
+	left: 57%;
+	top: 149%;
 }
-#bsShowButton04:hover {
-  cursor: pointer;
-}
-
-.map_switcher6 {
-	position: absolute;
+#bsShowButtonMC:hover {
+    cursor: pointer;
+  }
+  #Magnifier_MC:hover {
+    cursor: pointer;
+  }
+ .bs_Magnifier_MC{
+    position: absolute;
+	width: 500px; /*500*/
+    height: 367px; /*367*/
+	left: 42%;
+    top: 48%;
+ }
+ #Magnifier2_MC:hover {
+    cursor: pointer;
+  }
+ .bs_Magnifier2_MC{
+    position: absolute;
+	width: 700px; /*1000*/
+    height: 540px; /*1000*/
+	left: 32%;
+    top: 28%;
+ }
+  .map_switcher6 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 20%;
+      top: 117%;
+  }
+  #bsShowButtonCL:hover {
+    cursor: pointer;
+  }
+  .map_CL{
+    position: absolute;
 	width: 50px;
     height: 50px;
-	left: 20%;
-	top: 117%;
-}
+	left: 65%;
+	top: 145%;
+  }
+  .cl{
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 3 pt;
+    position: absolute;
+	left: 65%;
+	top: 149%;
+  }
+  .bs_Magnifier_CL{
+    position: absolute;
+	width: 500px; /*500*/
+    height: 367px; /*367*/
+	left: 48%;
+    top: 48%;
+  }
+  .bs_Magnifier2_CL{
+    position: absolute;
+	width: 700px; /*1000*/
+    height: 540px; /*1000*/
+	left: 38%;
+    top: 28%;
+  }
+  #Magnifier_CL:hover {
+    cursor: pointer;
+  }
+  #Magnifier2_CL:hover {
+    cursor: pointer;
+  }

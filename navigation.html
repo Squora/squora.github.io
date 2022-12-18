@@ -4,7 +4,6 @@
 	<meta charset="UTF-8" />
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 	<title>Навигатор</title>
-	<link rel="stylesheet" href="style.css">
 	<script src="js/mapSwitcher.js"></script>
 </head>
 <body>
@@ -67,23 +66,81 @@
 		</div>
 	</a>
 </div>
-	<div id="bsElements01">
-		<p><img src="images/PDO_artboard_1.1.png" class="bs_map"></p>
-		<p><img src="images/map_switcher.PNG" id="bsShowButton02" onclick="showElementsBS_02()" class="map_switcher"></p>
-	</div>
-	<div id="bsElements02">
-		<p><img src="images/map_switcher.PNG" id="bsShowButton01" onclick="showElementsBS_01()" class="map_switcher2"></p>
-		<p><img src="images/PDO_artboard_1.2.png" class="bs_map"></p>
-		<p><img src="images/map_switcher.PNG" id="bsShowButton03" onclick="showElementsBS_03()" class="map_switcher3"></p>
-	</div>
-	<div id="bsElements03">
-		<p><img src="images/map_switcher.PNG" id="bsShowButton02" onclick="showElementsBS_02()" class="map_switcher4"></p>
-		<p><img src="images/PDO_artboard_1.3.png" class="bs_map"></p>
-		<p><img src="images/map_switcher.PNG" id="bsShowButton04" onclick="showElementsBS_04()" class="map_switcher5"></p>
-	</div>
-	<div id="bsElements04">
-		<p><img src="images/map_switcher.PNG" id="bsShowButton03" onclick="showElementsBS_03()" class="map_switcher6"></p>
-		<p><img src="images/PDO_artboard_1.4.png" class="bs_map"></p>
-	</div>
+  
+  </div>
+
+
+
+
+  <div id="bsElements01">
+	<p><img src="images/PDO_artboard_1.png" class="bs_map"></p>
+	<p><img src="images/map_switcher.PNG" id="bsShowButton02" onclick="showElementsBS_02()" class="map_switcher"></p>
+	<p><img src="images/map_cc.PNG" id="bsShowButtonСС" onclick="showbsMagnifierСС()" class="map_cc"></p>
+	<p class ="cc">Коворкинг</p>
+</div>
+<div class="PermalinkOverlay"  id="bsMagnifierСС" style = "display: none;">
+	<p><img src="images/Magnifier.png" id = "Magnifier_CC" class="bs_Magnifier_СС" onclick="showbsMagnifierСС2()"></p>
+</div>
+
+<div class="PermalinkOverlay"  id="bsMagnifier2СС" style = "display: none;">
+	<p><img src="images/Magnifier.png" id = "Magnifier2_CC"  onclick="showbsMagnifierСС_OF()" class="bs_Magnifier2_СС"></p>
+</div>
+
+
+
+
+<div id="bsElements02">
+	<p><img src="images/PDO_artboard_2.png" class="bs_map"></p>
+	<p><img src="images/map_switcher.PNG" id="bsShowButton01" onclick="showElementsBS_01()" class="map_switcher2"></p>
+	<p><img src="images/map_switcher.PNG" id="bsShowButton03" onclick="showElementsBS_03()" class="map_switcher3"></p>
+</div>
+
+
+
+
+
+<div id="bsElements03">
+	
+	<p><img src="images/PDO_artboard_3.png" class="bs_map"></p>
+	<p><img src="images/map_switcher.PNG" id="bsShowButton02" onclick="showElementsBS_02()" class="map_switcher4"></p>
+	<p><img src="images/map_switcher.PNG" id="bsShowButton04" onclick="showElementsBS_04()" class="map_switcher5"></p>
+	<p><img src="images/map_psychological_help.PNG" id="bsShowButtonPH"  onclick="showbsMagnifierPH()" class="map_PH"></p>
+	<p class ="pp">Психологическая</p>
+	<p class ="hh">помощь</p>
+</div>
+
+<div class="PermalinkOverlay"  id="bsMagnifierPH" style = "display: none;">
+	<p><img src="images/Magnifier.png" id = "Magnifier_PH" onclick="showbsMagnifierPH2()" class="bs_Magnifier_PH" ></p>
+</div>
+
+<div class="PermalinkOverlay"  id="bsMagnifier2PH" style = "display: none;">
+	<p><img src="images/Magnifier.png" id = "Magnifier2_PH"  onclick="showbsMagnifierPH_OF()" class="bs_Magnifier2_PH"></p>
+</div>
+
+
+
+
+<div id="bsElements04">
+	<p><img src="images/map_switcher.PNG" id="bsShowButton03" onclick="showElementsBS_03()" class="map_switcher6"></p>
+	<p><img src="images/PDO_artboard_4.png" class="bs_map"></p>
+	<p><img src="images/medical_center.PNG" id="bsShowButtonMC"   onclick="showbsMagnifierMC()" class="map_MC"></p>
+	<p class ="mc">Медпункт</p>
+	<p><img src="images/club.PNG" id="bsShowButtonCL"   onclick="showbsMagnifierCL()" class="map_CL"></p>
+	<p class ="cl">Секции</p>
+</div>
+<div class="PermalinkOverlay"  id="bsMagnifierMC" style = "display: none;">
+	<p><img src="images/Magnifier.png" id = "Magnifier_MC" onclick="showbsMagnifierMC2()" class="bs_Magnifier_MC" ></p>
+</div>
+<div class="PermalinkOverlay"  id="bsMagnifier2MC" style = "display: none;">
+	<p><img src="images/Magnifier.png" id = "Magnifier2_MC" onclick="showbsMagnifierMC_OF()" class="bs_Magnifier2_MC"></p>
+</div>
+<div class="PermalinkOverlay"  id="bsMagnifierCL" style = "display: none;">
+	<p><img src="images/Magnifier.png" id = "Magnifier_CL" onclick="showbsMagnifierCL2()" class="bs_Magnifier_CL" ></p>
+</div>
+<div class="PermalinkOverlay"  id="bsMagnifier2CL" style = "display: none;">
+	<p><img src="images/Magnifier.png" id = "Magnifier2_CL" onclick="showbsMagnifierCL_OF()" class="bs_Magnifier2_CL"></p>
+</div>
+
+
 	</body>
 </html>
