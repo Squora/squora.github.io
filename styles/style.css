@@ -6,6 +6,7 @@
 .headerBox{
 	font-family: Gilroy;
 }
+
 .headerBox {
 	position: absolute;
 	height: 40%;
@@ -114,6 +115,7 @@
 	font-weight: bold;
 	color: black;
 }
+
 .upper-menu__link3 {
 	position: absolute;
 	#padding-left: 1600px;
@@ -140,6 +142,7 @@
 	position: absolute;
 	top: 28.5%; left: 28%;
 }
+
 .long2{
 	position: absolute;
 	top: 40.7%; left: 28%;
@@ -149,6 +152,7 @@
 	position: absolute;
 	top: 53%; left: 28%;
 }
+
 .long4{
 	position: absolute;
 	top: 77%; left: 28%;
@@ -182,48 +186,48 @@
    }
  
    
-   .burger-menu__lines,
-   .burger-menu__lines::after,
-   .burger-menu__lines::before {
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
 	position: absolute;
 	width: 27px;
 	height: 0.3px;
-	background-color: #fff;
+	background-color: #fff; 
+}
    
-   }
-   
-   .burger-menu__lines {
+.burger-menu__lines {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-   }
+}
    
-   .burger-menu__lines::before {
+.burger-menu__lines::before {
 	content: "";
 	top: -8px;
-   }
+}
    
-   .burger-menu__lines::after {
+.burger-menu__lines::after {
 	content: "";
 	top: 8px;
-   }
-   .burger-menu_active .burger-menu__button,
-   .burger-menu_active .burger-menu__lines {
+}
+
+.burger-menu_active .burger-menu__button,
+.burger-menu_active .burger-menu__lines {
 	background-color: transparent;
-   }
+}
    
    
-   .burger-menu_active .burger-menu__lines::before {
+.burger-menu_active .burger-menu__lines::before {
 	top: 0;
 	transform: rotate(45deg);
-   }
+}
    
-   .burger-menu_active .burger-menu__lines::after {
+.burger-menu_active .burger-menu__lines::after {
 	top: 0;
 	transform: rotate(-45deg);
-   }
+}
    
-   .burger-menu__nav {
+.burger-menu__nav {
 	min-width: 100%;
 	min-height: 100%;
 	padding-top: 80px;
@@ -237,9 +241,9 @@
 	left: -100%;
 	top:0;
 	transition: 0.5s;
-   }
+}
    
-   .burger-menu__nav a{
+.burger-menu__nav a{
 	padding: 16px;
 	font-family: sans-serif;
 	font-size: 16px;
@@ -249,16 +253,17 @@
 	font-weight: bold;
 	color: #fff;
 	transition: margin .2s ease-in-out;
-   }
+}
 
-   .burger-menu_active .burger-menu__nav {
+.burger-menu_active .burger-menu__nav {
 	left: 0;
-   }
-   .burger-menu__link1 {
+}
+   
+.burger-menu__link1 {
 	position: absolute;
 	left: 173px;
 	top: 60px;
-   }
+}
 
 
 .burger-menu__nav a:hover,
@@ -275,58 +280,59 @@
 	filter: brightness(0.7);
 }
 
-   .burger-menu__link2{
+.burger-menu__link2{
 	position: absolute;
 	left: 173px;
 	top: 110px;
-   }
+}
 
-   .burger-menu__link3 {
+.burger-menu__link3 {
 	position: absolute;
 	left: 173px;
 	top: 158px;
-   }
+}
 
-   .burger-menu__link4 {
+.burger-menu__link4 {
 	position: absolute;
 	left: 173px;
 	top: 206px;
-   }
+}
 
-   .burger-menu__link5 {
+.burger-menu__link5 {
 	position: absolute;
 	left: 173px;
 	top: 254px;
-   }
+}
 
-   .burger-menu__link6 {
+.burger-menu__link6 {
 	position: absolute;
 	left: 173px;
 	top: 302px;
-   }
+}
 
-   .burger-menu__link7 {
+.burger-menu__link7 {
 	position: absolute;
 	left: 173px;
 	top: 350px;
-   }
-   .burger-menu__link8 {
+}
+   
+.burger-menu__link8 {
 	position: absolute;
 	left: 173px;
 	top: 398px;
-   }
+}
 
-   .burger-menu__link9 {
+.burger-menu__link9 {
 	position: absolute;
 	left: 173px;
 	top: 446px;
-   }
+}
 
-   .burger-menu__link10 {
+.burger-menu__link10 {
 	position: absolute;
 	left: 173px;
 	top: 494px;
-   }
+}
 /* --------------------------------------ЗАГОЛОВОК ГЛАНВОЙ СТРАНИЦЫ --------------------------------------*/
 
 
@@ -343,12 +349,14 @@
 	font-size: 30px;
 	font-weight: bold;
 }
+
 .NaviHeaderBox{
 	font-family: Gilroy;
 }
-   .NavRef {
+
+.NavRef {
 	font-family: Gilroy;
-	position: relative;
+	position: absolute;
 	text-align: center;
 	top: 55%; left: 45%;
 	font-size: 30px;
@@ -357,10 +365,6 @@
 	color: black;
 }
 /*-------------------МЕНЮ КВАДРАТИКИ------------------------*/
-
-.BoxesGroup {
-	
-}
 
 
 .BS_Square-container {
@@ -388,6 +392,7 @@
     font-size: 180%;
     left:45%;
 }
+
 .text1_BS_Square{
     font-family: Gilroy;
     font-size: 80%;
@@ -396,6 +401,7 @@
     left:-30%;
     top:80%;
 }
+
 .text2_BS_Square{
     font-family: Gilroy;
     font-size: 80%;
@@ -404,6 +410,7 @@
     left:-17%;
     top:114%;
 }
+
 .text-hover_BS_Square {     
     visibility: hidden; 
 	      
@@ -412,15 +419,19 @@
     visibility: hidden; 
 	      
 }
+
 .BS_Square-container:hover .text_BS_Square{
     display: none;
 }
+
 .BS_Square-container:hover .text1_BS_Square{
     display: none;
 }
+
 .BS_Square-container:hover .text2_BS_Square{
     display: none;
 }
+
 .BS_Square-container:hover .text-hover_BS_Square {    
     visibility: visible;
 	font-family: Gilroy;
@@ -461,6 +472,7 @@
     font-size: 180%;
     left:45%;
 }
+
 .text1_PK_Square{
     font-family: Gilroy;
     font-size: 80%;
@@ -469,6 +481,7 @@
     left:-25%;
     top:80%;
 }
+
 .text2_PK_Square{
     font-family: Gilroy;
     font-size: 80%;
@@ -477,6 +490,7 @@
     left:-14%;
     top:114%;
 }
+
 .text-hover_PK_Square {     
     visibility: hidden; 
 	      
@@ -485,15 +499,19 @@
     visibility: hidden; 
 	      
 }
+
 .PK_Square-container:hover .text_PK_Square{
     display: none;
 }
+
 .PK_Square-container:hover .text1_PK_Square{
     display: none;
 }
+
 .PK_Square-container:hover .text2_PK_Square{
     display: none;
 }
+
 .PK_Square-container:hover .text-hover_PK_Square {    
     visibility: visible;
 	font-family: Gilroy;
@@ -501,6 +519,7 @@
     position: relative;
 	left: -30%;
 }
+
 .PK_Square-container:hover .text-hover1_PK_Square {    
     visibility: visible;
 	font-family: Gilroy;
@@ -534,6 +553,7 @@
     font-size: 180%;
     left:45%;
 }
+
 .text1_PR_Square{
     font-family: Gilroy;
     font-size: 80%;
@@ -542,6 +562,7 @@
     left:-10%;
     top:80%;
 }
+
 .text2_PR_Square{
     font-family: Gilroy;
     font-size: 80%;
@@ -550,23 +571,29 @@
     left:-20%;
     top:114%;
 }
+
 .text-hover_PR_Square {     
     visibility: hidden; 
 	      
 }
+
 .text-hover1_PR_Square {     
     visibility: hidden; 
 	      
 }
+
 .PR_Square-container:hover .text_PR_Square{
     display: none;
 }
+
 .PR_Square-container:hover .text1_PR_Square{
     display: none;
 }
+
 .PR_Square-container:hover .text2_PR_Square{
     display: none;
 }
+
 .PR_Square-container:hover .text-hover_PR_Square {    
     visibility: visible;
 	font-family: Gilroy;
@@ -607,6 +634,7 @@
     font-size: 180%;
     left:45%;
 }
+
 .text1_AB_Square{
     font-family: Gilroy;
     font-size: 80%;
@@ -615,6 +643,7 @@
     left:-10%;
     top:80%;
 }
+
 .text2_AB_Square{
     font-family: Gilroy;
     font-size: 80%;
@@ -623,23 +652,29 @@
     left:-20%;
     top:114%;
 }
+
 .text-hover_AB_Square {     
     visibility: hidden; 
 	      
 }
+
 .text-hover1_AB_Square {     
     visibility: hidden; 
 	      
 }
+
 .AB_Square-container:hover .text_AB_Square{
     display: none;
 }
+
 .AB_Square-container:hover .text1_AB_Square{
     display: none;
 }
+
 .AB_Square-container:hover .text2_AB_Square{
     display: none;
 }
+
 .AB_Square-container:hover .text-hover_AB_Square {    
     visibility: visible;
 	font-family: Gilroy;
@@ -647,6 +682,7 @@
     position: relative;
 	left: -30%;
 }
+
 .AB_Square-container:hover .text-hover1_AB_Square {    
     visibility: visible;
 	font-family: Gilroy;
@@ -654,6 +690,7 @@
     position: relative;
 	left: -15%;
 }
+
 .M_Square-container {
     display: block;
     position: absolute;
@@ -678,6 +715,7 @@
     font-weight: bold;
     font-size: 180%;
 }
+
 .text1_M_Square{
     font-family: Gilroy;
     font-size: 80%;
@@ -686,6 +724,7 @@
     left:-12%;
     top:80%;
 }
+
 .text2_M_Square{
     font-family: Gilroy;
     font-size: 80%;
@@ -694,23 +733,29 @@
     left:-20%;
     top:114%;
 }
+
 .text-hover_M_Square {     
     visibility: hidden; 
 	      
 }
+
 .text-hover1_M_Square {     
     visibility: hidden; 
 	      
 }
+
 .M_Square-container:hover .text_M_Square{
     display: none;
 }
+
 .M_Square-container:hover .text1_M_Square{
     display: none;
 }
+
 .M_Square-container:hover .text2_M_Square{
     display: none;
 }
+
 .M_Square-container:hover .text-hover_M_Square {    
     visibility: visible;
 	font-family: Gilroy;
@@ -718,6 +763,7 @@
     position: relative;
 	left: -30%;
 }
+
 .M_Square-container:hover .text-hover1_M_Square {    
     visibility: visible;
 	font-family: Gilroy;
@@ -729,6 +775,7 @@
 #bsElements01 {
   display: none;
 }
+
 #bsShowButton01:hover {
   cursor: pointer;
 }
@@ -752,27 +799,31 @@
 	position: absolute;
 	width: 50px;
     height: 50px;
-	left: 32%;
-	top: 125%;
+	left: 30.5%;
+	top: 110%;
 }
 
-  #bsShowButtonСС:hover {
+#bsShowButtonСС:hover {
     cursor: pointer;
-  }
-  #Magnifier_CC:hover {
+}
+
+#Magnifier_CC:hover {
     cursor: pointer;
-  }
-  #Magnifier2_CC:hover {
+}
+
+Magnifier2_CC:hover {
     cursor: pointer;
-  }
+}
+
 .cc{
     font-family: Gilroy;
     font-weight: bold;
     text-align: 10pt;
     position: absolute;
-	left: 31.5%;
-	top: 130%;
+	left: 30%;
+	top: 113%;
 }
+
 .bs_Magnifier_СС{
     position: absolute;
 	width: 500px; /*500*/
@@ -785,13 +836,14 @@
     background: rgba(0,0,0,0.7);
     bottom: 0;
     width: 100%; /*1000*/
-    height: 1100px;
+    height: 1550px; /*1100*/
     left: 0;
     position:absolute;
     right: 0;
-    top: 53%;
+    top: 0; /*53%*/
     z-index: 1010;
 }
+
 .bs_Magnifier2_СС{
     position: absolute;
 	width: 700px; /*1000*/
@@ -800,12 +852,10 @@
 	top: 45%; /*50*/
 }
 
-
-
-
 #bsElements02 {
   display: none;
 }
+
 #bsShowButton02:hover {
   cursor: pointer;
 }
@@ -826,38 +876,36 @@
 	top: 116%;
 }
 
+.map_switcher4 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 25%;
+    top: 92%;
+}
 
-
-
-
-  
-  .map_switcher4 {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      left: 25%;
-      top: 92%;
-  }
-  #bsElements03 {
+#bsElements03 {
     display: none;
-  }
-  #bsShowButton03:hover {
-    cursor: pointer;
-  }
-  .map_switcher5 {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      left: 68%;
-      top: 123%;
-  }
+}
 
-  .map_PH{
+#bsShowButton03:hover {
+    cursor: pointer;
+}
+
+.map_switcher5 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 68%;
+    top: 123%;
+}
+
+.map_PH{
     position: absolute;
 	width: 50px;
     height: 50px;
-	left: 77.5%;
-	top: 67%;
+	left: 70%;
+	top: 64%;
 }
 
 .pp{
@@ -865,8 +913,8 @@
     font-weight: bold;
     font-size: 3 pt;
     position: absolute;
-	left: 75%;
-	top: 72%;
+	left: 68%;
+	top: 68%;
 }
 
 .hh{
@@ -874,18 +922,21 @@
     font-weight: bold;
     text-align: 10pt;
     position: absolute;
-	left: 77%;
-	top: 75%;
+	left: 70%;
+	top: 71%;
 }
+
 .bs_Magnifier_PH{
     position: absolute;
 	width: 500px; /*500*/
     height: 367px; /*367*/
 	left: 50%;
 }
+
 #bsShowButtonPH:hover {
     cursor: pointer;
-  }
+}
+  
 .bs_Magnifier2_PH{
     position: absolute;
 	width: 700px; /*1000*/
@@ -893,102 +944,117 @@
 	left: 22%; /*22*/
 	top: 15%; /*50*/
 }
+
 #Magnifier2_PH:hover {
     cursor: pointer;
-  }
+}
   
-  #Magnifier_PH:hover {
+#Magnifier_PH:hover {
     cursor: pointer;
-  }
+}
 
-
-  #bsElements04 {
+#bsElements04 {
     display: none;
-  }
-  #bsShowButton04:hover {
+}
+
+#bsShowButton04:hover {
     cursor: pointer;
-  }
+}
 
 .map_MC{
     position: absolute;
 	width: 50px;
     height: 50px;
-	left: 58%;
-	top: 145%;
+	left: 53%;
+	top: 123%;
 }
+
 .mc{
     font-family: Gilroy;
     font-weight: bold;
     font-size: 3 pt;
     position: absolute;
-	left: 57%;
-	top: 149%;
+	left: 52%;
+	top: 127%;
 }
+
 #bsShowButtonMC:hover {
     cursor: pointer;
-  }
-  #Magnifier_MC:hover {
+}
+
+#Magnifier_MC:hover {
     cursor: pointer;
-  }
- .bs_Magnifier_MC{
+}
+
+.bs_Magnifier_MC{
     position: absolute;
 	width: 500px; /*500*/
     height: 367px; /*367*/
 	left: 42%;
     top: 48%;
- }
- #Magnifier2_MC:hover {
+}
+
+#Magnifier2_MC:hover {
     cursor: pointer;
-  }
- .bs_Magnifier2_MC{
+}
+
+.bs_Magnifier2_MC{
     position: absolute;
 	width: 700px; /*1000*/
     height: 540px; /*1000*/
 	left: 32%;
     top: 28%;
- }
-  .map_switcher6 {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      left: 20%;
-      top: 117%;
-  }
-  #bsShowButtonCL:hover {
+}
+
+.map_switcher6 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 20%;
+    top: 117%;
+}
+
+#bsShowButtonCL:hover {
     cursor: pointer;
-  }
-  .map_CL{
+}
+
+.map_CL{
     position: absolute;
 	width: 50px;
     height: 50px;
-	left: 65%;
-	top: 145%;
-  }
-  .cl{
+	left: 58.5%;
+	top: 123%;
+}
+
+.cl{
     font-family: Gilroy;
     font-weight: bold;
     font-size: 3 pt;
     position: absolute;
-	left: 65%;
-	top: 149%;
-  }
-  .bs_Magnifier_CL{
+	left: 58%;
+	top: 127%;
+}
+
+.bs_Magnifier_CL{
     position: absolute;
 	width: 500px; /*500*/
     height: 367px; /*367*/
 	left: 48%;
     top: 48%;
-  }
-  .bs_Magnifier2_CL{
+}
+
+.bs_Magnifier2_CL{
     position: absolute;
 	width: 700px; /*1000*/
     height: 540px; /*1000*/
 	left: 38%;
     top: 28%;
-  }
-  #Magnifier_CL:hover {
+}
+
+#Magnifier_CL:hover {
     cursor: pointer;
-  }
-  #Magnifier2_CL:hover {
+}
+
+#Magnifier2_CL:hover {
     cursor: pointer;
-  }
+}
