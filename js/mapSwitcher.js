@@ -24,6 +24,8 @@ function showbsMagnifierСС_OF()
     document.getElementById("bsMagnifier2СС").style.display = "none";
 }
 
+
+
 function showElementsBS_02() 
 {
     document.getElementById("bsElements01").style.display = "none";
@@ -31,6 +33,9 @@ function showElementsBS_02()
     document.getElementById("bsElements03").style.display = "none";
     document.getElementById("bsElements04").style.display = "none";
 }
+
+
+
 
 function showElementsBS_03() 
 {
@@ -57,6 +62,7 @@ function showbsMagnifierPH_OF()
     document.getElementById("bsMagnifier2PH").style.display = "none";
 }
 
+
 function showElementsBS_04() 
 {
     document.getElementById("bsElements01").style.display = "none";
@@ -81,7 +87,6 @@ function showbsMagnifierMC_OF()
 {
     document.getElementById("bsMagnifier2MC").style.display = "none";
 }
-
 function showbsMagnifierCL() 
 {
     document.getElementById("bsMagnifierCL").style.display = "block";
