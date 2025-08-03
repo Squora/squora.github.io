@@ -1,0 +1,102 @@
+.home {
+  padding: 40px;
+  color: #fff;
+  background-color: #1a1a1a;
+  height: 100%; /* Поставьте 100% высоты для .home, чтобы она заполнила родительский контейнер */
+  box-sizing: border-box; /* Чтобы паддинги не влияли на итоговую высоту */
+  display: flex;
+  flex-direction: column;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ff9800;
+  margin-bottom: 20px;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.home-achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.achievement {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.achievement p {
+  font-weight: 500;
+  color: #bbb;
+}
+
+.achievement svg {
+  color: #ff9800;
+  font-size: 1.8rem;
+}
+
+/* Новый раздел для увлечений */
+.home-hobbies {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #ff9800; /* Добавим разделительную линию сверху */
+}
+
+.home-hobbies h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff9800;
+  margin-bottom: 15px;
+}
+
+.home-hobbies p {
+  font-size: 1.2rem;
+  color: #bbb;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.home-hobbies p:last-child {
+  margin-bottom: 0; /* Убираем отступ снизу у последнего абзаца */
+}
+
+/* Убедитесь, что блоки с достижениями и хобби адаптивны */
+@media (max-width: 768px) {
+  .home {
+    padding: 20px;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .home-achievements {
+    gap: 15px;
+  }
+
+  .achievement p {
+    font-size: 1rem;
+  }
+
+  .home-hobbies h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-hobbies p {
+    font-size: 1rem;
+  }
+}

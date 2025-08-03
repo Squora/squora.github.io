@@ -1,0 +1,17 @@
+.app {
+  display: flex;
+  width: 100vw; /* Важно! */
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.app-content {
+  margin-left: 400px; /* Оставляем место для Sidebar */
+  padding: 40px;
+  width: calc(100vw - 400px);
+  flex-grow: 1; /* Контент будет занимать всю оставшуюся высоту */
+  background-color: #1a1a1a;
+  box-sizing: border-box; /* Учитываем паддинги в расчете общей высоты */
+  overflow: hidden; /* Скрываем любые переполненные элементы */
+  min-height: 100%; /* Убедитесь, что .app-content заполняет всю доступную высоту */
+}
