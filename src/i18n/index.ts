@@ -6,7 +6,7 @@ import en from './locales/en.json';
 import ru from './locales/ru.json';
 
 i18n
-  .use(LanguageDetector) // Определение языка по браузеру или локалстораджу
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
@@ -15,7 +15,7 @@ i18n
     },
     fallbackLng: 'en',
     interpolation: {
-      escapeValue: false, // react уже экранирует
+      escapeValue: false,
     },
   });
 

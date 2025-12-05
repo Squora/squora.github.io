@@ -1,53 +1,40 @@
-import { useState, useEffect } from "react";
-import Sidebar from "./components/Sidebar";
+import SideNavigation from "@components/SideNavigation";
+import ScrollProgress from "@components/ScrollProgress";
 import Home from "@pages/Home";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Experience from "./components/Experience";
-import "./styles/App.scss";
-import Contacts from "./components/Contacts";
-import LanguageSwitcher from "@components/LanguageSwitcher";
+import Projects from "@components/sections/Projects";
+import Skills from "@components/sections/Skills";
+import Experience from "@components/sections/Experience";
+import Education from "@components/sections/Education";
+import Contacts from "@components/sections/Contacts";
+import "@styles/App.scss";
 
 function App() {
-  const [activeSection, setActiveSection] = useState(() => {
-    return localStorage.getItem("activeSection") || "home";
-  });
-
-  useEffect(() => {
-    localStorage.setItem("activeSection", activeSection);
-  }, [activeSection]);
-
-  useEffect(() => {
-    localStorage.setItem("activeSection", activeSection);
-  }, [activeSection]);
-
-  const renderSection = () => {
-    switch (activeSection) {
-      case "home":
-        return <Home />;
-      case "projects":
-        return <Projects />;
-      case "skills":
-        return <Skills />;
-      case "experience":
-        return <Experience />;
-      case "contacts":
-        return <Contacts />;
-      default:
-        return <Home />;
-    }
-  };
-
   return (
     <div className="app">
-      <Sidebar
-        activeSection={activeSection}
-        setActiveSection={setActiveSection}
-      />
-      <div className="app-content">
-        <LanguageSwitcher className="language-toggle" />
-        {renderSection()}
-      </div>
+      <ScrollProgress />
+
+      <SideNavigation />
+
+      <main className="app-content">
+        <section id="home">
+          <Home />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="experience">
+          <Experience />
+        </section>
+        <section id="education">
+          <Education />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="contact">
+          <Contacts />
+        </section>
+      </main>
     </div>
   );
 }

@@ -1,11 +1,93 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+:root {
+  /* Typography */
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Fira Code', 'Courier New', monospace;
+
+  /* Neutral Black & White Color Palette */
+  --color-primary: #ffffff;
+  --color-primary-light: #f5f5f5;
+  --color-primary-dark: #e0e0e0;
+  --color-primary-darker: #c0c0c0;
+
+  /* Neutral Gradients */
+  --gradient-primary: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+  --gradient-primary-reverse: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
+  --gradient-radial: radial-gradient(circle at top right, #f5f5f5, #e0e0e0);
+  --gradient-subtle: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(240, 240, 240, 0.03) 100%);
+
+  /* Background Colors */
+  --color-bg-primary: #0a0a0a;
+  --color-bg-secondary: #1a1a1a;
+  --color-bg-tertiary: #2a2a2a;
+  --color-bg-card: rgba(42, 42, 42, 0.6);
+
+  /* Glass Effect */
+  --glass-bg: rgba(42, 42, 42, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.15);
+
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #a0a0a0;
+  --color-text-disabled: #666666;
+
+  /* Status Colors */
+  --color-success: #28a745;
+  --color-warning: #FFB300;
+  --color-error: #ff5252;
+  --color-info: #17a2b8;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 20px rgba(255, 255, 255, 0.2);
+  --shadow-glow-strong: 0 0 30px rgba(255, 255, 255, 0.3);
+
+  /* Brand Colors for Icons */
+  --color-github: #181717;
+  --color-gitlab: #FC6D26;
+  --color-linkedin: #0A66C2;
+  --color-telegram: #26A5E4;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+
+  /* Font Weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  /* Apply defaults */
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  font-weight: var(--font-regular);
+  color-scheme: dark;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,12 +96,30 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  font-weight: var(--font-medium);
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: var(--transition-fast);
+  position: relative;
 }
+
 a:hover {
-  color: #535bf2;
+  color: var(--color-primary);
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: var(--gradient-primary);
+  transition: width var(--transition-normal);
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 html, body {
@@ -30,45 +130,113 @@ html, body {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
+  background: var(--color-bg-primary);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
+/* Typography Hierarchy */
 h1 {
-  font-size: 3.2em;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: var(--font-extrabold);
   line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  margin: 0;
 }
 
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: var(--font-semibold);
+  line-height: 1.3;
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+p {
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+/* Modern Button Styles */
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-text-primary);
+  padding: 0.75em 1.5em;
   font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  font-weight: var(--font-semibold);
+  font-family: var(--font-primary);
+  background: transparent;
+  color: var(--color-text-primary);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all var(--transition-normal);
+  position: relative;
 }
+
 button:hover {
-  border-color: #646cff;
+  background: var(--color-text-primary);
+  color: var(--color-bg-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
+
+button:active {
+  transform: translateY(0);
+}
+
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 2px solid var(--color-text-primary);
+  outline-offset: 2px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-muted);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-secondary);
+}
+
+/* Selection Styling */
+::selection {
+  background: var(--color-text-primary);
+  color: var(--color-bg-primary);
+}
+
+::-moz-selection {
+  background: var(--color-text-primary);
+  color: var(--color-bg-primary);
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
 }

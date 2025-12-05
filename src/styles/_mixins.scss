@@ -1,0 +1,144 @@
+// Glass morphism card effect
+@mixin glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+}
+
+// Hover lift effect with shadow
+@mixin hover-lift($shadow: 0 10px 30px rgba(0, 0, 0, 0.3)) {
+  transition: all var(--transition-normal);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow;
+    border-color: var(--color-text-primary);
+  }
+}
+
+// Top border animation on hover
+@mixin hover-top-border {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--color-text-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+// Circular icon container
+@mixin icon-circle($size: 60px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $size;
+  height: $size;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--color-text-primary);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-normal);
+
+  svg {
+    font-size: calc($size * 0.4);
+    color: var(--color-text-primary);
+  }
+
+  &:hover {
+    transform: scale(1.1) rotate(5deg);
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
+
+// Section title with gradient underline
+@mixin section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: var(--font-extrabold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-2xl);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--color-text-primary), transparent);
+    border-radius: var(--radius-full);
+  }
+}
+
+// Badge/pill style for tags
+@mixin badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--color-text-primary);
+    transform: translateY(-2px);
+  }
+}
+
+// Auto-fit grid layout
+@mixin auto-grid($min-width: 300px, $gap: var(--spacing-xl)) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: $gap;
+}
+
+// Text line clamp
+@mixin line-clamp($lines: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// Visibility animation for scroll reveal
+@mixin scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Focus visible for accessibility
+@mixin focus-visible {
+  &:focus-visible {
+    outline: 2px solid var(--color-text-primary);
+    outline-offset: 2px;
+  }
+}

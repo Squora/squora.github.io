@@ -1,102 +1,118 @@
+@use 'mixins' as *;
+
 .home {
-  padding: 40px;
-  color: #fff;
-  background-color: #1a1a1a;
-  height: 100%; /* Поставьте 100% высоты для .home, чтобы она заполнила родительский контейнер */
-  box-sizing: border-box; /* Чтобы паддинги не влияли на итоговую высоту */
-  display: flex;
-  flex-direction: column;
-}
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  background: var(--color-bg-primary);
+  min-height: auto;
+  box-sizing: border-box;
 
-.home-title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #ff9800;
-  margin-bottom: 20px;
-}
+  &-content {
+    width: 100%;
+  }
 
-.home-description {
-  font-size: 1.2rem;
-  color: #bbb;
-  margin-bottom: 30px;
-  line-height: 1.5;
-}
+  &-section-title {
+    @include section-title;
+    margin-bottom: var(--spacing-lg);
+  }
 
-.home-achievements {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  &-description {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.8;
+    max-width: 900px;
+  }
+
+  &-achievements {
+    @include auto-grid(300px, var(--spacing-lg));
+    margin-top: var(--spacing-xl);
+  }
 }
 
 .achievement {
+  @include glass-card;
   display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 1.2rem;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--color-text-primary);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform var(--transition-normal);
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glass-shadow);
+    border-color: var(--color-text-primary);
+
+    &::before {
+      transform: scaleY(1);
+    }
+
+    .achievement-icon {
+      transform: scale(1.1);
+    }
+  }
+
+  &-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+
+    svg {
+      color: var(--color-text-primary);
+      font-size: 1.8rem;
+    }
+  }
+
+  p {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    font-weight: var(--font-medium);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+  }
 }
 
-.achievement p {
-  font-weight: 500;
-  color: #bbb;
-}
-
-.achievement svg {
-  color: #ff9800;
-  font-size: 1.8rem;
-}
-
-/* Новый раздел для увлечений */
-.home-hobbies {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 2px solid #ff9800; /* Добавим разделительную линию сверху */
-}
-
-.home-hobbies h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #ff9800;
-  margin-bottom: 15px;
-}
-
-.home-hobbies p {
-  font-size: 1.2rem;
-  color: #bbb;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.home-hobbies p:last-child {
-  margin-bottom: 0; /* Убираем отступ снизу у последнего абзаца */
-}
-
-/* Убедитесь, что блоки с достижениями и хобби адаптивны */
+// Responsive
 @media (max-width: 768px) {
   .home {
-    padding: 20px;
+    padding: var(--spacing-xl) var(--spacing-md);
+
+    &-achievements {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+    }
   }
 
-  .home-title {
-    font-size: 2.5rem;
-  }
+  .achievement {
+    padding: var(--spacing-md);
 
-  .home-description {
-    font-size: 1rem;
-  }
+    &-icon {
+      width: 50px;
+      height: 50px;
 
-  .home-achievements {
-    gap: 15px;
-  }
-
-  .achievement p {
-    font-size: 1rem;
-  }
-
-  .home-hobbies h2 {
-    font-size: 1.5rem;
-  }
-
-  .home-hobbies p {
-    font-size: 1rem;
+      svg {
+        font-size: 1.5rem;
+      }
+    }
   }
 }

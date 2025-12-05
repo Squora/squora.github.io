@@ -1,69 +1,187 @@
-# React + TypeScript + Vite
+# Nikita Skvortsov - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website showcasing my experience, projects, and skills as a PHP Backend Developer.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Live:** [https://squora.github.io](https://squora.github.io)
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Category | Technology |
+|----------|------------|
+| **Framework** | React 19 + TypeScript |
+| **Build Tool** | Vite 7 with SWC |
+| **Styling** | SCSS with CSS Variables, Mixins, BEM |
+| **i18n** | i18next (RU/EN) |
+| **Icons** | react-icons |
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- Single-page layout with smooth scroll navigation
+- Side navigation with active section indicators
+- Scroll progress indicator
+- Fully responsive design (mobile, tablet, desktop)
+- Dark theme with glassmorphism effects
+- Animated statistics counters
+- Project showcase with image carousels
+- Contact form
+- Language switcher (Russian / English)
+- SEO optimized with Open Graph and JSON-LD
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm 9+
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/squora/squora.github.io.git
+cd squora.github.io
+
+# Install dependencies
+npm install
+
+# Copy environment variables (optional)
+cp .env.example .env
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Start development server
+npm run dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Production Build
+
+```bash
+# Build for production
+npm run build
+
+# Preview production build locally
+npm run preview
+```
+
+### Linting
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```
+src/
+├── assets/                    # Images and static files
+│   ├── avatar.png
+│   └── shortengo/             # Project screenshots
+├── components/
+│   ├── sections/              # Page sections
+│   │   ├── Contacts.tsx       # Contact form and social links
+│   │   ├── Education.tsx      # Education timeline
+│   │   ├── Experience.tsx     # Work experience timeline
+│   │   ├── Hero.tsx           # Hero section with intro
+│   │   ├── ProjectCard.tsx    # Project card component
+│   │   ├── Projects.tsx       # Projects showcase
+│   │   ├── Skills.tsx         # Skills by category
+│   │   └── Stats.tsx          # Animated statistics
+│   ├── LanguageSwitcher.tsx   # RU/EN toggle
+│   ├── ScrollProgress.tsx     # Scroll progress bar
+│   └── SideNavigation.tsx     # Section navigation
+├── i18n/
+│   ├── index.ts               # i18n configuration
+│   └── locales/
+│       ├── en.json            # English translations
+│       └── ru.json            # Russian translations
+├── pages/
+│   └── Home.tsx               # Main page layout
+├── styles/
+│   ├── _animations.scss       # Shared keyframe animations
+│   ├── _mixins.scss           # Reusable SCSS mixins
+│   ├── App.scss
+│   ├── Contacts.scss
+│   ├── Education.scss
+│   ├── Experience.scss
+│   ├── Hero.scss
+│   ├── Home.scss
+│   ├── LanguageSwitcher.scss
+│   ├── Navbar.scss
+│   ├── ProjectCard.scss
+│   ├── Projects.scss
+│   ├── ScrollProgress.scss
+│   ├── Skills.scss
+│   └── Stats.scss
+├── App.tsx                    # Main app component
+├── index.css                  # Global styles & CSS variables
+└── main.tsx                   # Entry point
+```
+
+## Path Aliases
+
+Configured in `vite.config.ts` and `tsconfig.app.json`:
+
+| Alias | Path |
+|-------|------|
+| `@styles` | `src/styles` |
+| `@pages` | `src/pages` |
+| `@components` | `src/components` |
+| `@assets` | `src/assets` |
+
+## SCSS Architecture
+
+### Mixins (`_mixins.scss`)
+
+| Mixin | Description |
+|-------|-------------|
+| `glass-card` | Glassmorphism card with backdrop blur |
+| `hover-lift` | Lift animation with shadow on hover |
+| `hover-top-border` | Animated top border on hover |
+| `icon-circle($size)` | Circular icon container |
+| `section-title` | Section title with gradient underline |
+| `badge-pill` | Badge/tag styling |
+| `auto-grid($min, $gap)` | Auto-fit responsive grid |
+| `line-clamp($lines)` | Multi-line text truncation |
+| `scroll-reveal` | Scroll-triggered fade animation |
+| `focus-visible` | Keyboard focus styling |
+
+### Animations (`_animations.scss`)
+
+- `fadeIn`, `fadeInUp`, `fadeInDown` - Fade transitions
+- `bounce`, `pulse`, `blink` - Attention animations
+- `spin`, `shake`, `shimmer` - Special effects
+
+## Environment Variables
+
+Copy `.env.example` to `.env` and configure:
+
+| Variable | Description |
+|----------|-------------|
+| `VITE_SITE_URL` | Site URL for canonical links |
+| `VITE_EMAIL_SERVICE_URL` | Email service endpoint (optional) |
+| `VITE_ANALYTICS_ID` | Analytics tracking ID (optional) |
+
+## Browser Support
+
+- Chrome 90+
+- Firefox 90+
+- Safari 14+
+- Edge 90+
+
+## Performance
+
+Build optimizations:
+- Code splitting (React, i18n, icons as separate chunks)
+- ES2020 target for modern browsers
+- CSS and JS minification
+- Asset hashing for cache busting
+
+## License
+
+MIT

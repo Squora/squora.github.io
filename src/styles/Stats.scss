@@ -1,0 +1,121 @@
+@use 'mixins' as *;
+
+.stats {
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  background: var(--color-bg-secondary);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-subtle);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &-title {
+    @include section-title;
+  }
+
+  &-grid {
+    @include auto-grid(250px, var(--spacing-lg));
+    margin-top: var(--spacing-xl);
+  }
+}
+
+.stat-item {
+  @include glass-card;
+  @include hover-top-border;
+  @include scroll-reveal;
+  padding: var(--spacing-xl);
+  text-align: center;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--glass-shadow);
+    border-color: var(--color-text-primary);
+
+    .stat-icon {
+      transform: scale(1.1);
+    }
+  }
+
+  .stat-icon {
+    font-size: 3rem;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-normal);
+  }
+
+  .stat-value {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: var(--font-extrabold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--color-text-muted);
+    font-weight: var(--font-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      transition-delay: #{$i * 0.1}s;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .stats {
+    padding: var(--spacing-xl) var(--spacing-md);
+
+    &-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--spacing-md);
+    }
+  }
+
+  .stat-item {
+    padding: var(--spacing-lg);
+
+    .stat-icon {
+      font-size: 2.5rem;
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    &-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

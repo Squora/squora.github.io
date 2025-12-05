@@ -16,16 +16,12 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className }) => {
   };
 
   return (
-    <button className={className} onClick={toggleLanguage} aria-label="Toggle language">
-      {i18n.language === "en" ? (
-        <>
-          EN
-        </>
-      ) : (
-        <>
-          RU
-        </>
-      )}
+    <button
+      className={className}
+      onClick={toggleLanguage}
+      aria-label="Toggle language"
+    >
+      {i18n.language === "en" ? <>EN</> : <>RU</>}
     </button>
   );
 };
