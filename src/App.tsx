@@ -1,6 +1,8 @@
 import SideNavigation from "@components/SideNavigation";
 import ScrollProgress from "@components/ScrollProgress";
 import Home from "@pages/Home";
+import Stats from "@components/sections/Stats";
+import About from "@components/sections/About";
 import Projects from "@components/sections/Projects";
 import Skills from "@components/sections/Skills";
 import Experience from "@components/sections/Experience";
@@ -18,6 +20,12 @@ function App() {
       <main className="app-content">
         <section id="home">
           <Home />
+        </section>
+        <section id="achievements">
+          <Stats />
+        </section>
+        <section id="about">
+          <About />
         </section>
         <section id="projects">
           <Projects />

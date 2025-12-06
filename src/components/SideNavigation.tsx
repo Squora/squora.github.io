@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import {
   FaHome,
+  FaChartBar,
+  FaUser,
   FaProjectDiagram,
   FaBriefcase,
   FaGraduationCap,
@@ -19,6 +21,8 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { id: "home", icon: FaHome, label: "home" },
+  { id: "achievements", icon: FaChartBar, label: "achievements" },
+  { id: "about", icon: FaUser, label: "aboutMe" },
   { id: "projects", icon: FaProjectDiagram, label: "projects" },
   { id: "experience", icon: FaBriefcase, label: "experience" },
   { id: "education", icon: FaGraduationCap, label: "education" },
