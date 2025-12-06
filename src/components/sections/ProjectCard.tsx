@@ -1,5 +1,6 @@
 import React, { useState, type JSX } from "react";
 import "@styles/ProjectCard.scss";
+import TechBadge from "@components/TechBadge";
 import {
   FaReact,
   FaNodeJs,
@@ -126,10 +127,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
         <div className="project-technologies">
           {project.technologies.map((tech, i) => (
-            <div className="technology" key={i}>
-              {getTechIcon(tech)}
-              <span>{tech}</span>
-            </div>
+            <TechBadge
+              key={i}
+              tech={tech}
+              icon={getTechIcon(tech)}
+              variant="project"
+            />
           ))}
         </div>
 

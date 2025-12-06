@@ -27,6 +27,7 @@ import {
   SiGo,
 } from "react-icons/si";
 import { useTranslation } from "react-i18next";
+import TechBadge from "@components/TechBadge";
 import "@styles/Experience.scss";
 
 interface ExperienceItem {
@@ -166,10 +167,12 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ exp, index }) => {
         {exp.technologies && exp.technologies.length > 0 && (
           <div className="experience-technologies">
             {exp.technologies.map((tech, i) => (
-              <div className="tech-badge" key={i}>
-                {getTechIcon(tech)}
-                <span>{tech}</span>
-              </div>
+              <TechBadge
+                key={i}
+                tech={tech}
+                icon={getTechIcon(tech)}
+                variant="experience"
+              />
             ))}
           </div>
         )}

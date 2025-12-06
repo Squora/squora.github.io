@@ -1,0 +1,51 @@
+@use 'mixins' as *;
+
+.tech-badge {
+  @include badge-pill;
+  text-decoration: none;
+  cursor: default;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: 1rem;
+      color: var(--color-text-primary);
+    }
+  }
+
+  &__text {
+    font-weight: var(--font-medium);
+  }
+
+  // Кликабельные ссылки
+  &[href] {
+    cursor: pointer;
+    text-decoration: none;
+
+    // Отключить глобальный ::after с линией
+    &::after {
+      display: none !important;
+      content: none !important;
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--color-text-primary);
+      transform: translateY(-2px);
+    }
+  }
+
+  // Вариант для Skills (немного больше padding)
+  &--skill {
+    padding: 8px 14px;
+  }
+}

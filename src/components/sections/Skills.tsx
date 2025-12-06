@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, type JSX } from "react";
 import { useTranslation } from "react-i18next";
 import { FaCode, FaDatabase, FaDocker, FaCogs, FaTools } from "react-icons/fa";
+import TechBadge from "@components/TechBadge";
 import "@styles/Skills.scss";
 
 interface SkillCategory {
@@ -182,9 +183,7 @@ const SkillCategoryCard: React.FC<SkillCategoryCardProps> = ({
 
       <div className="skill-badges">
         {category.skills.map((skill, i) => (
-          <div key={i} className="skill-badge">
-            {skill}
-          </div>
+          <TechBadge key={i} tech={skill} variant="skill" />
         ))}
       </div>
     </div>
