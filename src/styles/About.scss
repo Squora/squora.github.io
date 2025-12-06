@@ -3,10 +3,12 @@
 .about {
   padding: var(--spacing-2xl) var(--spacing-lg);
   background: var(--color-bg-primary);
-  min-height: auto;
+  min-height: 100vh;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 
   &::before {
     content: '';
@@ -22,6 +24,7 @@
 
   &-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     z-index: 1;

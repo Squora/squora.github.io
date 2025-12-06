@@ -12,6 +12,15 @@
   width: 100%;
   min-height: 100vh;
   background-color: var(--color-bg-primary);
+
+  section#contact {
+    background-color: var(--color-bg-secondary);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 html {
