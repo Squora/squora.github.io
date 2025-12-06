@@ -59,20 +59,27 @@ const EducationCard: React.FC<EducationCardProps> = ({ item, index }) => {
     };
   }, []);
 
+  const isEven = index % 2 === 0;
+
   return (
     <div
       ref={cardRef}
-      className={`education-card ${isVisible ? "visible" : ""}`}
+      className={`education-item ${isEven ? "left" : "right"} ${
+        isVisible ? "visible" : ""
+      }`}
       style={{ transitionDelay: `${index * 0.1}s` }}
     >
-      <div className="education-icon">
-        {item.type === "university" ? <FaGraduationCap /> : <FaCertificate />}
-      </div>
+      <div className="education-dot"></div>
+      <div className="education-card">
+        <div className="education-icon-container">
+          {item.type === "university" ? <FaGraduationCap /> : <FaCertificate />}
+        </div>
 
-      <div className="education-content">
-        <h3 className="education-institution">{item.institution}</h3>
-        <p className="education-degree">{item.degree}</p>
-        <p className="education-field">{item.field}</p>
+        <div className="education-header">
+          <h3 className="education-institution">{item.institution}</h3>
+          <p className="education-degree">{item.degree}</p>
+          <p className="education-field">{item.field}</p>
+        </div>
 
         <div className="education-meta">
           <div className="education-period">
@@ -104,7 +111,8 @@ const Education: React.FC = () => {
       <div className="education-container">
         <h2 className="education-title">{t("education")}</h2>
 
-        <div className="education-grid">
+        <div className="education-timeline">
+          <div className="timeline-line"></div>
           {educationData.map((item, index) => (
             <EducationCard key={index} item={item} index={index} />
           ))}
